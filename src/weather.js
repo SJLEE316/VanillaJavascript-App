@@ -42,7 +42,7 @@ function setWeatherByCoords(coords) {
         country,
       };
 
-      const weatherArea = document.querySelector(".weather-area");
+      const weatherArea = document.querySelector(".weather");
       const formedWeather = makeWeatherText(weather);
       weatherArea.innerText = formedWeather;
     });
