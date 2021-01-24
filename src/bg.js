@@ -6,7 +6,8 @@ const body = document.querySelector("body");
 
 function setBgImg(number) {
   const bgImg = new Image();
-  bgImg.src = `../src/images/${number}.jpg`;
+  // bgImg.src = `../src/images/${number}.jpg`;
+  bgImg.src = `./src/images/${number}.jpg`;
   bgImg.classList.add("bgImg");
   body.appendChild(bgImg);
 }
