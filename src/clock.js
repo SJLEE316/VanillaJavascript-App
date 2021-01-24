@@ -3,7 +3,7 @@
 // 1초마다 reset되게 함
 
 const clockContainer = document.querySelector(".clock");
-const clock = document.createElement("h1");
+const clock = document.createElement("span");
 
 function getTime() {
   const now = new Date();

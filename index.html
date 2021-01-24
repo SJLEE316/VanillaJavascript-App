@@ -9,14 +9,16 @@
 </head>
 <body>
   <!-- weather -->
-  <div class="clock-area"></div>
-  <!-- clock -->
-  <div class="clock"></div>
-  <!-- greeting -->
-  <form class="name-form">
-    <input class="name-input" type="text" placeholder="이름을 입력해주세요! 같이 인사해요"/>
-  </form>  
-  <h4 class="name-greetings"></h4>
+  <div class="weather">weather</div>
+  <div class="clock-name">
+    <!-- clock -->
+    <div class="clock"></div>
+    <!-- greeting -->
+    <form class="name-form">
+      <input class="name-input" type="text" placeholder="이름을 입력해주세요! 같이 인사해요"/>
+    </form>  
+    <h4 class="name-greetings"></h4>
+  </div>
   <!-- todo -->
   <div class="todo-component">
     <form class="todo-form">
@@ -26,11 +28,11 @@
       <input class="todo-input" type="text" placeholder="add task" />
     </form>
     <div class="todo-container">
-      <div class="list">
+      <div class="pending-list-group">
         <h2>PENDING</h2>
         <ul class="pending-list"></ul>
       </div>
-      <div class="list">
+      <div class="finished-list-group">
         <h2>FINISHED</h2>
         <ul class="finished-list"></ul>
       </div>

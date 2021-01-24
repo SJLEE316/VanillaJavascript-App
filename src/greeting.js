@@ -21,15 +21,15 @@ function handleSubmit(event) {
 }
 
 function askForName() {
-  form.classList.add(SHOWING);
-  form.addEventListener("submit", handleSubmit);
+  todoForm.classList.add(SHOWING);
+  todoForm.addEventListener("submit", handleSubmit);
 }
 
 function showGreeting(USER_LS) {
   todoForm.classList.remove(SHOWING);
   todoForm.classList.add(HIDDEN);
   greeting.classList.add(SHOWING);
-  greeting.innerText = `hello ${USER_LS}`;
+  greeting.innerText = `Nice to meet you, ${USER_LS}`;
 }
 
 function enterName() {

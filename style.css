@@ -1,3 +1,11 @@
+body {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /* bg.js */
 .bgImg {
   position: absolute;
@@ -8,6 +16,37 @@
   z-index: -1;
 }
 
+/* weather.js */
+.weather {
+  top: 10%;
+  position: absolute;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+  text-shadow: 0 0 10px rgb(243, 135, 116);
+}
+
+/* clock */
+.clock-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock {
+  font-size: 76.72px;
+  font-weight: 800;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .clock {
+    font-size: 10vw;
+    font-weight: 800;
+    color: white;
+  }
+}
+
 /* greeting.js */
 .hidden {
   display: none;
@@ -15,4 +54,85 @@
 
 .showing {
   display: block;
+}
+
+.name-form {
+  margin-top: 30px;
+}
+
+.name-input {
+  height: 60px;
+  width: 500px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+  text-align: center;
+  font-size: 40px;
+  color: #3e2723;
+}
+
+.name-input::placeholder {
+  text-align: center;
+  font-size: 30px;
+}
+
+.name-greetings {
+  font-size: 15.3px;
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  .name-greetings {
+    color: white;
+    font-size: 2vw;
+  }
+}
+
+/* todo.js */
+.todo-component {
+  color: #3e2723;
+}
+
+@media screen and (min-width: 768px) {
+  .todo-component {
+    color: #3e2723;
+    align-self: flex-end;
+    position: absolute;
+    top: 30%;
+    margin-right: 10px;
+    width: 25%;
+  }
+}
+
+.todo-input {
+  height: 30px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: none;
+}
+.todo-input:focus,
+.name-input:focus {
+  outline: solid rgb(243, 135, 116, 0.5);
+}
+.todo-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px;
+}
+.todo-container {
+  display: flex;
+  height: auto;
+}
+
+.pending-list-group,
+.finished-list-group {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(243, 229, 245, 0.5);
+  border: 1px solid rgba(243, 229, 230, 0.5);
+  box-shadow: 0 0 10px rgba(243, 229, 220, 0.5);
+}
+
+h2 {
+  text-align: center;
 }
